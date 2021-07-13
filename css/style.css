@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #2D25A0;
+}
+
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar nav ul{
+    display: flex;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar nav .menu{
+    margin-left: 156px;
+    align-items: center;
+}
+
+.navbar nav .login{
+    margin-right: 156px;
+    margin-top: 42px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+
+.navbar nav ul li{
+    list-style: none;
+    padding-right: 36px;
+}
+
+.navbar nav .login .icon{
+    padding-right: 8px;
+}
+
+.navbar nav .login .text{
+    
+    padding-right: 0px;
+}
+
+.navbar nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D25A0;
+}
+
+.banner .banner-left{
+    margin-left: 176px;
+    width: 485px;
+}
+
+.banner .banner-left h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: transform 1s ease-in-out, padding-bottom 1s ease-in-out;
+}
+
+.banner .banner-left div ul{
+    display: flex;
+    list-style: none;
+    width: 168px;
+    height: 44px;
+    padding-left: 0px;
+    background-color: #E02C6D;
+    cursor: pointer;
+    transition: margin-left 1s ease-in-out 1s;
+}
+
+.banner .banner-left div ul .watch{
+    padding-right: 8px;
+    margin-left: 24px;
+}
+
+.banner .banner-left div ul li{
+    margin-top: 10px;
+}
+
+.banner .banner-left div ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.banner .banner-right{
+    margin-right: 176px;
+}
+
+.banner .banner-right img{
+    width: 650px;
+    transition: transform 1s ease-in-out, padding-bottom 1s ease-in-out, padding-top 1s ease-in-out;
+}
+
+.banner:hover .generic-player{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transform: scale(1.1);
+}
+
+.banner:hover h1{
+    transform: scale(1.1);
+    padding-bottom: 13px;
+}
+
+.banner:hover .watch-button{
+    margin-left: -23px;
+}
