@@ -9,11 +9,13 @@ body{
 
 .navbar{
     background-color: #2D25A0;
+    margin-bottom: -2px;
 }
 
 .navbar nav{
     display: flex;
     justify-content: space-between;
+    align-items: baseline
 }
 
 .navbar nav ul{
@@ -27,6 +29,11 @@ body{
     align-items: center;
 }
 
+.navbar nav .menu .bars{
+    padding-right: 0px;
+    display: none;
+}
+
 .navbar nav .login{
     margin-right: 156px;
     margin-top: 42px;
@@ -38,6 +45,7 @@ body{
 .navbar nav ul li{
     list-style: none;
     padding-right: 36px;
+    transition: transform .3s ease-in;
 }
 
 .navbar nav .login .icon{
@@ -54,6 +62,12 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+}
+
+/*----------Navbar Hover----------*/
+
+.menu li:hover{
+    transform: scale(1.15);
 }
 
 /*----------Top Banner CSS----------*/
@@ -91,7 +105,7 @@ body{
     padding-left: 0px;
     background-color: #E02C6D;
     cursor: pointer;
-    transition: margin-left 1s ease-in-out 1s;
+    transition: margin-left .3s ease-in-out 1s;
 }
 
 .banner .banner-left div ul .watch{
@@ -142,6 +156,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 50px;
+    grid-column-gap: 30px;
 }
 
 .player-cards .player-1, .player-4, .player-7, .player-10{
@@ -215,6 +230,7 @@ body{
 }
 
 /*----------Bottom Banner CSS----------*/
+
 .bot-banner{
     margin-top: 165px;
     display: flex;
@@ -235,6 +251,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     cursor: default;
+    transition: color 1s ease-in;
 }
 
 .bot-banner .bot-banner-left p{
@@ -243,15 +260,19 @@ body{
     color: #6C6C6C;
     text-align: justify;
     padding-bottom: 10px;
+    cursor: default;
+}
+
+.bot-banner .bot-banner-left div{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
 }
 
 .bot-banner .bot-banner-left div ul{
     display: flex;
     list-style: none;
-    width: 168px;
-    height: 44px;
     padding-left: 0px;
-    background-color: #E02C6D;
     cursor: pointer;
 }
 
@@ -277,4 +298,310 @@ body{
 
 .bot-banner .bot-banner-right img{
     width: 600px;
+}
+
+/*----------Bottom Banner Hover Effect----------*/
+
+.bot-banner:hover .bot-banner-head{
+    color: #E02C6D;
+}
+
+/*----------Footer CSS----------*/
+
+.footer{
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.footer .logo-socials{
+    justify-self: center;
+}
+
+.footer .logo-socials .logo{
+    width: 250px;
+}
+
+.footer .logo-socials .socials{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .logo-socials .socials a{
+    padding: 4px 8.57px;
+    border-radius: 50%;
+    font-size: 17px;
+    color: #969BAB;
+    background-color: rgba(0,0,0,0.1);
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.footer .logo-socials .socials a i{
+    font-size: 17px;
+    color: #969BAB;
+}
+
+.footer .logo-socials p{
+    padding-top: 10px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*----------Media Query----------*/
+
+@media only screen and (max-width: 1700px)
+{
+    .player-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+    }
+
+    .player-cards .player-1, .player-3, .player-5, .player-7, .player-9, .player-11{
+        justify-self: end !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .player-cards .player-2, .player-4, .player-6, .player-8, .player-10, .player-12{
+        justify-self: start !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .player-cards div h2 {
+        font-size: 33px;
+    }
+}
+
+@media only screen and (max-width: 1550px)
+{
+    .banner .banner-left {
+        width: 416px;
+    }
+
+    .banner .banner-right img {
+        width: 490px;
+    }
+
+    .banner .banner-left h1 {
+        font-size: 50px;
+    }
+
+    .bot-banner .bot-banner-left {
+        width: 382px;
+    }
+
+    .bot-banner .bot-banner-left h1 {
+        font-size: 39px;
+    }
+
+    .bot-banner .bot-banner-right img {
+        width: 465px;
+    }
+
+    .banner:hover .watch-button{
+        margin-left: -19px;
+    }
+}
+
+@media only screen and (max-width: 1250px)
+{
+    .navbar nav .menu {
+        margin-left: 20px;
+    }
+
+    .navbar nav .login {
+        margin-right: 20px;
+    }
+
+    .banner {
+        padding-bottom: 45px;
+    }
+
+    .banner .banner-left {
+        width: 266px;
+    }
+
+    .banner .banner-right img {
+        width: 329px;
+    }
+
+    .banner .banner-left h1 {
+        font-size: 36px;
+    }
+
+    .player-cards div h2 {
+        font-size: 28px;
+    }
+
+    .bot-banner .bot-banner-left {
+        width: 294px;
+    }
+
+    .bot-banner .bot-banner-left h1 {
+        font-size: 30px;
+    }
+
+    .bot-banner .bot-banner-right img {
+        width: 328px;
+    }
+
+    .footer .logo-socials .logo {
+        width: 125px;
+        margin-left: 65px;
+    }
+
+    .banner:hover .watch-button{
+        margin-left: -11px;
+    }
+}
+
+@media only screen and (max-width: 1100px)
+{
+
+    .navbar nav .menu {
+        margin-left: 20px;
+    }
+
+    .navbar nav .login {
+        margin-right: 20px;
+    }
+
+    .navbar nav .menu li{
+        display: none;
+    }
+
+    .navbar nav .menu .bars{
+        display: flex;
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 45px;
+        grid-row-gap: 30px;
+    }
+
+    .banner .banner-left {
+        width: 266px;
+    }
+
+    .banner .banner-right{
+        justify-self: end;
+    }
+
+    .banner .banner-right img {
+        width: 329px;
+    }
+
+    .banner .banner-left h1 {
+        font-size: 36px;
+    }
+
+    .player-cards .player{
+        width: 330px;
+        height: 474px;
+    }
+
+    .player-cards .player .player-1-1{
+        width: 300px;
+        height: 256px;
+    }
+
+    .player-cards .player p span{
+        display: none;
+    }
+
+    .player-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 50px;
+    }
+
+    .player-cards div h2 {
+        font-size: 28px;
+    }
+
+    .bot-banner {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    .bot-banner .bot-banner-left {
+        justify-self: center;
+        width: 294px;
+        margin-left: 0px;
+    }
+
+    .bot-banner .bot-banner-right {
+        justify-self: center;
+        width: 294px;
+        margin-right: 0px;
+    }
+
+    .bot-banner .bot-banner-left h1 {
+        font-size: 30px;
+    }
+
+    .bot-banner .bot-banner-right img {
+        width: 294px;
+    }
+
+    .footer{
+        margin-top: 100px;
+    }
+
+    .footer .logo-socials .logo {
+        width: 125px;
+        margin-left: 65px;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    .banner .banner-left {
+        justify-self: center;
+        margin-left: 0px;
+        width: 266px;
+    }
+
+    .banner .banner-right{
+        justify-self: center;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 688px)
+{
+    .player-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+    }
+
+    .player-cards .player{
+        justify-self: center !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        width: 330px;
+        height: 474px;
+    }
+
+    .player-cards .player .player-1-1{
+        width: 300px;
+        height: 256px;
+    }
+
+    .player-cards .player p span{
+        display: none;
+    }
 }
