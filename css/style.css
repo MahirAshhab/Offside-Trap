@@ -159,6 +159,10 @@ body{
     grid-column-gap: 30px;
 }
 
+.player-cards .player{
+    text-decoration: none;
+}
+
 .player-cards .player-1, .player-4, .player-7, .player-10{
     justify-self: end;
     margin-right: -17px;
@@ -173,14 +177,15 @@ body{
     margin-left: -17px;
 }
 
-.player-cards div{
+.player-cards a{
     width: 495px;
     height: 711px;
-    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
-.player-cards .player{
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+.player-cards a div{
+    width: 100%;
+    background-color: #fff;
 }
 
 .player-cards div .player-1-1{
@@ -199,6 +204,7 @@ body{
 .player-cards div h2{
     font-size: 38px;
     font-weight: 700;
+    color: #18191F;
     padding: 15px;
     padding-top: 0;
     padding-bottom: 15px;
@@ -211,6 +217,7 @@ body{
 .player-cards div p{
     font-size: 16px;
     font-weight: 400;
+    color: #6C6C6C;
     padding: 15px;
     padding-top: 0;
     padding-bottom: 0;
@@ -237,6 +244,9 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: background-color .5s ease-in;
 }
 
 .bot-banner .bot-banner-left{
@@ -251,7 +261,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     cursor: default;
-    transition: color 1s ease-in;
+    transition: color .3s ease-in;
 }
 
 .bot-banner .bot-banner-left p{
@@ -261,6 +271,7 @@ body{
     text-align: justify;
     padding-bottom: 10px;
     cursor: default;
+    transition: color .3s ease-in;
 }
 
 .bot-banner .bot-banner-left div{
@@ -296,14 +307,28 @@ body{
     margin-right: 156px;
 }
 
-.bot-banner .bot-banner-right img{
-    width: 600px;
+.bot-banner .bot-banner-right iframe{
+    width: 560px;
+    height: 315px;
+    transition: box-shadow .3s ease-in .5s;
 }
 
 /*----------Bottom Banner Hover Effect----------*/
 
 .bot-banner:hover .bot-banner-head{
     color: #E02C6D;
+}
+
+.bot-banner:hover{
+    background-color: #2D25A0;
+}
+
+ .bot-banner-text{
+    color: #fff;
+}
+
+.bot-banner:hover iframe{
+    box-shadow: 0px 0px 40px rgb(255 255 255 / 25%);
 }
 
 /*----------Footer CSS----------*/
@@ -330,7 +355,7 @@ body{
     align-items: center;
 }
 
-.footer .logo-socials .socials a{
+.footer .logo-socials .socials .social-account{
     padding: 4px 8.57px;
     border-radius: 50%;
     font-size: 17px;
@@ -338,11 +363,12 @@ body{
     background-color: rgba(0,0,0,0.1);
     margin-right: 7px;
     margin-left: 7px;
+    transition: transform .2s ease-in;
 }
 
 .footer .logo-socials .socials a i{
     font-size: 17px;
-    color: #969BAB;
+    transition: color .2s ease-in;
 }
 
 .footer .logo-socials p{
@@ -350,6 +376,14 @@ body{
     margin-bottom: 60px;
     font-size: 18px;
     font-weight: 400;
+}
+
+.social-account:hover{
+    transform: scale(1.2);
+}
+
+.social-account:hover .social-icon{
+    color: #E02C6D;
 }
 
 /*----------Media Query----------*/
@@ -402,8 +436,9 @@ body{
         font-size: 39px;
     }
 
-    .bot-banner .bot-banner-right img {
-        width: 465px;
+    .bot-banner .bot-banner-right iframe {
+        width: 464px;
+        height: 261px;
     }
 
     .banner:hover .watch-button{
@@ -437,10 +472,6 @@ body{
         font-size: 36px;
     }
 
-    .player-cards div h2 {
-        font-size: 28px;
-    }
-
     .bot-banner .bot-banner-left {
         width: 294px;
     }
@@ -449,8 +480,9 @@ body{
         font-size: 30px;
     }
 
-    .bot-banner .bot-banner-right img {
-        width: 328px;
+    .bot-banner .bot-banner-right iframe{
+        width: 320px;
+        height: 180px;
     }
 
     .footer .logo-socials .logo {
@@ -497,10 +529,6 @@ body{
         justify-self: end;
     }
 
-    .banner .banner-right img {
-        width: 329px;
-    }
-
     .banner .banner-left h1 {
         font-size: 36px;
     }
@@ -513,6 +541,10 @@ body{
     .player-cards .player .player-1-1{
         width: 300px;
         height: 256px;
+    }
+
+    .player-cards div h2 {
+        font-size: 28px;
     }
 
     .player-cards .player p span{
@@ -548,12 +580,13 @@ body{
         margin-right: 0px;
     }
 
-    .bot-banner .bot-banner-left h1 {
-        font-size: 30px;
+    .bot-banner .bot-banner-right iframe{
+        width: 294px;
+        height: 165.375px;
     }
 
-    .bot-banner .bot-banner-right img {
-        width: 294px;
+    .bot-banner .bot-banner-left h1 {
+        font-size: 30px;
     }
 
     .footer{
