@@ -5,6 +5,8 @@ body{
     margin: 0;
 }
 
+/*----------Navbar CSS----------*/
+
 .navbar{
     background-color: #2D25A0;
 }
@@ -30,6 +32,7 @@ body{
     margin-top: 42px;
     padding: 10px 24px;
     background-color: #E02C6D;
+    cursor: pointer;
 }
 
 .navbar nav ul li{
@@ -53,6 +56,8 @@ body{
     color: #fff;
 }
 
+/*----------Banner CSS----------*/
+
 .banner{
     padding-top: 50px;
     padding-bottom: 80px;
@@ -60,6 +65,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #2D25A0;
+    margin-bottom: 70px;
 }
 
 .banner .banner-left{
@@ -74,6 +80,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     transition: transform 1s ease-in-out, padding-bottom 1s ease-in-out;
+    cursor: default;
 }
 
 .banner .banner-left div ul{
@@ -112,6 +119,8 @@ body{
     transition: transform 1s ease-in-out, padding-bottom 1s ease-in-out, padding-top 1s ease-in-out;
 }
 
+/*----------Banner Hover Effects----------*/
+
 .banner:hover .generic-player{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -125,4 +134,82 @@ body{
 
 .banner:hover .watch-button{
     margin-left: -23px;
+}
+
+/*----------Player Cards CSS----------*/
+
+.player-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+}
+
+.player-cards .player-1, .player-4, .player-7, .player-10{
+    justify-self: end;
+    margin-right: -17px;
+}
+
+.player-cards .player-2, .player-5, .player-8, .player-11{
+    justify-self: center;
+}
+
+.player-cards .player-3, .player-6, .player-9, .player-12{
+    justify-self: start;
+    margin-left: -17px;
+}
+
+.player-cards div{
+    width: 495px;
+    height: 711px;
+    background-color: #fff;
+}
+
+.player-cards .player{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-cards div .player-1-1{
+    height: 388.266px;
+    width: 465px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.player-cards div img{
+    width: 100%;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+}
+
+.player-cards div h2{
+    font-size: 38px;
+    font-weight: 700;
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+}
+
+.player-cards div p{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/*----------Player Cards Hover Effects----------*/
+
+.player:hover .p-img-1{
+    transform: scale(1.2);
+}
+
+.player:hover .player-name{
+    color: #E02C6D;
 }
