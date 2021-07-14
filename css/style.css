@@ -56,7 +56,7 @@ body{
     color: #fff;
 }
 
-/*----------Banner CSS----------*/
+/*----------Top Banner CSS----------*/
 
 .banner{
     padding-top: 50px;
@@ -212,4 +212,69 @@ body{
 
 .player:hover .player-name{
     color: #E02C6D;
+}
+
+/*----------Bottom Banner CSS----------*/
+.bot-banner{
+    margin-top: 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.bot-banner .bot-banner-left{
+    margin-left: 156px;
+    width: 469px;
+}
+
+.bot-banner .bot-banner-left h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: default;
+}
+
+.bot-banner .bot-banner-left p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.bot-banner .bot-banner-left div ul{
+    display: flex;
+    list-style: none;
+    width: 168px;
+    height: 44px;
+    padding-left: 0px;
+    background-color: #E02C6D;
+    cursor: pointer;
+}
+
+.bot-banner .bot-banner-left div ul .watch{
+    padding-right: 8px;
+    margin-left: 24px;
+}
+
+.bot-banner .bot-banner-left div ul li{
+    margin-top: 10px;
+}
+
+.bot-banner .bot-banner-left div ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bot-banner .bot-banner-right{
+    margin-right: 156px;
+}
+
+.bot-banner .bot-banner-right img{
+    width: 600px;
 }
