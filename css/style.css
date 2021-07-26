@@ -16,6 +16,8 @@ body{
 }
 
 .navbar nav{
+    max-width: 1920px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: baseline
@@ -76,6 +78,13 @@ body{
 /*----------Top Banner CSS----------*/
 
 .banner{
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+}
+
+.banner .top-banner{
+    max-width: 1920px;
+    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 80px;
     display: flex;
@@ -160,6 +169,8 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 50px;
     grid-column-gap: 30px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .player-cards .player{
@@ -242,6 +253,8 @@ body{
 /*----------Bottom Banner CSS----------*/
 
 .bot-banner{
+    max-width: 1920px;
+    margin: 0 auto;
     margin-top: 165px;
     display: flex;
     justify-content: space-between;
@@ -495,14 +508,6 @@ body{
 
 @media only screen and (max-width: 1250px)
 {
-    .navbar nav .menu {
-        margin-left: 20px;
-    }
-
-    .navbar nav .login {
-        margin-right: 20px;
-    }
-
     .banner {
         padding-bottom: 45px;
     }
@@ -517,6 +522,28 @@ body{
 
     .banner .banner-left h1 {
         font-size: 36px;
+    }
+
+    .player-cards .player{
+        width: 330px;
+        height: 474px;
+    }
+
+    .player-cards .player .player-1-1{
+        width: 300px;
+        height: 256px;
+    }
+
+    .player-cards div h2 {
+        font-size: 28px;
+    }
+
+    .player-cards .player p span{
+        display: none;
+    }
+
+    .player-cards div h2 {
+        font-size: 28px;
     }
 
     .bot-banner .bot-banner-left {
@@ -565,7 +592,7 @@ body{
         display: flex;
     }
 
-    .banner {
+    .banner .top-banner{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 45px;
@@ -600,12 +627,6 @@ body{
 
     .player-cards .player p span{
         display: none;
-    }
-
-    .player-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 50px;
     }
 
     .player-cards div h2 {
